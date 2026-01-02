@@ -11,28 +11,25 @@ export default function About() {
       </div>
 
       {/* Paragraph Fade-in */}
-     <div
+ <div
   className="fade-in-text"
   style={{
-    fontSize: '1.4rem',
+    fontSize: '1.3rem',
     lineHeight: '1.7',
-    maxWidth: '850px',
+    maxWidth: '800px',
     marginBottom: '5rem',
     animationDelay: '0.3s'
   }}
 >
-  <p style={{ marginBottom: '2rem' }}>
-    I am a B.Tech student based in Kerala, currently studying at the College of Engineering Cherthala, with a strong interest in web development and modern software engineering. I focus on building clean, responsive, and performance-oriented web applications while continuously strengthening my foundation across both frontend and backend technologies.
-  </p>
-
-  <p style={{ marginBottom: '2rem' }}>
-    My current work involves developing user-centric interfaces, understanding backend fundamentals, and applying best practices in code structure, scalability, and performance. I enjoy breaking down complex problems into practical solutions and learning how real-world systems are designed and implemented.
+  <p style={{ marginBottom: '1.8rem' }}>
+    I am a B.Tech Computer Science student based in Kerala, currently studying at the College of Engineering Cherthala. I am focused on learning and building in the field of web development.
   </p>
 
   <p>
-    With a growing passion for full-stack development, I am actively expanding my skill set through personal and academic projects, aiming to evolve into a well-rounded software developer.
+    At present, I work on developing clean and responsive user interfaces while strengthening my understanding of backend fundamentals through personal and academic projects.
   </p>
 </div>
+
       {/* Education Section */}
       <div style={{ borderTop: '2px solid rgba(0,0,0,0.05)', paddingTop: '3rem' }}>
         <div className="reveal-wrapper">
