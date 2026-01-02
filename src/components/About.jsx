@@ -43,7 +43,7 @@ export default function About() {
 
         <div className="fade-in-text" style={{ marginBottom: '3rem', animationDelay: '0.7s' }}>
           <h4 style={{ fontSize: '1.8rem', fontWeight: '800' }}>B.Tech Computer Science</h4>
-          <p style={{ color: '#555', marginTop: '0.5rem' }}>2022 — Present | Currently Pursuing</p>
+          <p style={{ color: '#555', marginTop: '0.5rem' }}>2023 — Present | Currently Pursuing</p>
         </div>
 
         <div className="fade-in-text" style={{ animationDelay: '0.9s' }}>
