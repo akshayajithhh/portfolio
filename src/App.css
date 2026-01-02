@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap');
+
+:root {
+  --bg-page: #F0EEEA;
+  --bg-card: #FFFFFF;
+  --blue: #0047FF;
+  --black: #0A0A0A;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Force text to Black/Blue - No White fonts */
+* { box-sizing: border-box; margin: 0; padding: 0; color: var(--black); }
+body { background-color: var(--bg-page) !important; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+
+/* --- ANIMATION: REVEAL (Slide Up from Mask) --- */
+.reveal-wrapper { overflow: hidden; display: block; }
+.reveal-text {
+  display: block;
+  transform: translateY(110%);
+  animation: revealUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes revealUp {
+  from { transform: translateY(110%); }
+  to { transform: translateY(0); }
+}
+
+/* --- ANIMATION: FADE IN (Slide + Opacity) --- */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* --- TYPOGRAPHY --- */
+.hero-title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(4rem, 15vw, 12rem);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
 }
 
-.card {
-  padding: 2em;
+.blue-span { color: var(--blue) !important; }
+
+/* --- UI COMPONENTS --- */
+.btn-minimal {
+  display: inline-block;
+  background: var(--bg-card);
+  color: var(--black);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.7rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.08);
+  width: fit-content;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.btn-minimal:hover {
+  background: var(--black);
+  color: var(--bg-page) !important;
+  transform: translateY(-3px);
 }
+
+.white-card {
+  background: var(--bg-card);
+  border-radius: 45px;
+  padding: 3.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.white-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.06);
+}
+
+/* --- NAVBAR --- */
+.nav-link-custom {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0; height: 2px; bottom: -5px; left: 0;
+  background-color: var(--blue);
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after { width: 100%; }
