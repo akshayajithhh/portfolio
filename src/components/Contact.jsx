@@ -24,7 +24,7 @@ export default function Contact() {
           maxWidth: '500px'
         }}
       >
-        I'm currently available for freelance projects and full-time opportunities.
+        I am currently a B.Tech student at the College of Engineering Cherthala. To explore my projects in detail or discuss potential collaborations, please feel free to connect with me through the platforms mentioned below.
       </p>
 
       {/* Email Button */}

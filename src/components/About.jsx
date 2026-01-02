@@ -11,10 +11,28 @@ export default function About() {
       </div>
 
       {/* Paragraph Fade-in */}
-      <p className="fade-in-text" style={{ fontSize: '1.4rem', lineHeight: '1.6', maxWidth: '850px', marginBottom: '5rem', animationDelay: '0.3s' }}>
-        I'm a Full Stack Developer based in Kerala. I build clean, high-performance digital experiences with a focus on bold minimalism and engineering precision.
-      </p>
+     <div
+  className="fade-in-text"
+  style={{
+    fontSize: '1.4rem',
+    lineHeight: '1.7',
+    maxWidth: '850px',
+    marginBottom: '5rem',
+    animationDelay: '0.3s'
+  }}
+>
+  <p style={{ marginBottom: '2rem' }}>
+    I am a B.Tech student based in Kerala, currently studying at the College of Engineering Cherthala, with a strong interest in web development and modern software engineering. I focus on building clean, responsive, and performance-oriented web applications while continuously strengthening my foundation across both frontend and backend technologies.
+  </p>
 
+  <p style={{ marginBottom: '2rem' }}>
+    My current work involves developing user-centric interfaces, understanding backend fundamentals, and applying best practices in code structure, scalability, and performance. I enjoy breaking down complex problems into practical solutions and learning how real-world systems are designed and implemented.
+  </p>
+
+  <p>
+    With a growing passion for full-stack development, I am actively expanding my skill set through personal and academic projects, aiming to evolve into a well-rounded software developer.
+  </p>
+</div>
       {/* Education Section */}
       <div style={{ borderTop: '2px solid rgba(0,0,0,0.05)', paddingTop: '3rem' }}>
         <div className="reveal-wrapper">
