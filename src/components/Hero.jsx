@@ -9,10 +9,12 @@ export default function Hero() {
           <span className="reveal-text">AKSHAY</span>
         </span>
         <span className="reveal-wrapper">
-          <span className="reveal-text blue-span" style={{ animationDelay: '0.1s' }}>AJITH.</span>
+          <span className="reveal-text blue-span" style={{ animationDelay: '0.1s' }}>AJITH.</span> 
         </span>
       </div>
       <Link to="/about" className="btn-minimal hero-btn">KNOW MORE</Link>
     </section>
   );
 }
+
+// this is the landing page of my portfolio ...

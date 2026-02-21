@@ -21,13 +21,13 @@ export default function About() {
     animationDelay: '0.3s'
   }}
 >
-  <p style={{ marginBottom: '1.8rem' }}>
-    I am a B.Tech Computer Science student based in Kerala, currently studying at the College of Engineering Cherthala. I am focused on learning and building in the field of web development.
-  </p>
+<p style={{ marginBottom: '1.8rem' }}>
+  I am a B.Tech Computer Science student from Kerala, studying at the College of Engineering Cherthala and focused on web development.
+</p>
 
-  <p>
-    At present, I work on developing clean and responsive user interfaces while strengthening my understanding of backend fundamentals through personal and academic projects.
-  </p>
+<p>
+  I build clean, responsive user interfaces while strengthening my backend fundamentals through projects.
+</p>
 </div>
 
       {/* Education Section */}
